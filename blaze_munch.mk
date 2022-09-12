@@ -9,12 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-PRODUCT_NAME := arrow_munch
+#Blaze Stuffs
+TARGET_BOOT_ANIMATION_RES := 1080
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Pc(laz_man)
+WITH_GAPPS := true
+
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := blaze_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO

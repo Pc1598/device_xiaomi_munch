@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_munch.mk
+    $(LOCAL_DIR)/blaze_munch.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_munch-user \
-    arrow_munch-userdebug \
-    arrow_munch-eng
+    blaze_munch-user \
+    blaze_munch-userdebug \
+    blaze_munch-eng
